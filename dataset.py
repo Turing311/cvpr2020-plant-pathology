@@ -52,7 +52,6 @@ class PlantDataset(Dataset):
         start_time = time()
         # Read image
         # solution-1: read from raw image
-        print('=====logging', os.path.join(IMAGE_FOLDER, self.data.iloc[index, 0] + ".jpg"))
         image = cv2.cvtColor(
             cv2.imread(os.path.join(IMAGE_FOLDER, self.data.iloc[index, 0] + ".jpg")), cv2.COLOR_BGR2RGB
         )
