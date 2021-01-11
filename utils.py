@@ -17,7 +17,7 @@ import pandas as pd
 import torch
 
 IMG_SHAPE = (1365, 2048, 3)
-IMAGE_FOLDER = "/kaggle/input/plant_pathology_2020-fgvc7/images"
+IMAGE_FOLDER = "/kaggle/input/plant-pathology-2020-fgvc7/images"
 #IMAGE_FOLDER = "data/images"
 NPY_FOLDER = "/home/public_data_center/kaggle/plant_pathology_2020/npys"
 LOG_FOLDER = "logs"
