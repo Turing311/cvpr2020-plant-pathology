@@ -98,6 +98,7 @@ class CoolSystem(pl.LightningModule):
         # compute roc_auc
         scores_all = torch.cat([output["scores"] for output in outputs]).cpu()
         labels_all = torch.round(torch.cat([output["labels"] for output in outputs]).cpu())
+        print('-------Label All:', labels_all)
         val_roc_auc = roc_auc_score(labels_all, scores_all)
 
         # terminal logs

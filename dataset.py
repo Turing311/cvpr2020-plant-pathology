@@ -74,6 +74,7 @@ class PlantDataset(Dataset):
             )
         else:
             label = torch.FloatTensor(self.data.iloc[index, 1:].values.astype(np.int64))
+            print('-----label----', label)
 
         return image, label, time() - start_time
 
